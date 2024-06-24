@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles7.css">
+    </head>
+    <body class="body x-center y-center flex">
+        <div class="container flex y-center column">
+            <div class="book flex column">
+                <div class="flex box-1 x-center y-center relative">todo list
+                    <div class="flex x-center y-center column">creat your list</div>
+                </div>
+            </div>
+            <div class="flex-1 x-center y-center font">inter your task
+                <img src="g.png" alt="g.png">
+            </div>
+           
+            <div class="item flex x-center y-center column">
+                <div class="item-1 flex font y-center relative">want to buy computer</div>
+                <div class="item-1 flex font y-center relative">send letter to smith</div>
+                <div class="item-1 flex font y-center relative">buy vegetables</div>
+            </div>
+        </div> 
+        <script>
+            function addTask() {
+                const taskInput = document.getElementById('taskInput');
+                const taskList = document.getElementById('taskList');
+    
+                if (taskInput.value.trim() !== "") {
+                    const taskItem = document.createElement('div');
+                    taskItem.className = 'item-1 flex font y-center relative';
+                    taskItem.innerHTML = `${taskInput.value} <button onclick="removeTask(this)">Remove</button>`;
+                    taskList.appendChild(taskItem);
+                    taskInput.value = "";
+                } else {
+                    alert("Please enter a task");
+                }
+            }
+    
+            function removeTask(button) {
+                const taskItem = button.parentElement;
+                taskItem.remove();
+            }
+        </script>
+    </body>
+</html>
