@@ -1,9 +1,0 @@
-.box{height: 100px;width: 500px;border: solid  black 1px;margin: 50px;
-    display:flex;
-     align-items: center;justify-content: center;background-color: aqua;justify-content: space-between;}
-span{height: 50px;width: 200px;border: black 1px;background-color:pink;display: flex;align-items:
-     center;justify-content: center;font-size: xx-large; justify-content: space-between;}
-.box-1{height: 100px;width: 500px;border: solid  black 1px;margin: 50px;
-    display:flex;background-color:gray;
-     align-items: center;justify-content: center;
-    }
