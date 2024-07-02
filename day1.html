@@ -1,0 +1,20 @@
+<html>
+    <head>
+<link rel="stylesheet" href="styles (1).css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Random Number Generator</h1>
+            <div id="number-display"></div>
+            <button id="generate-button">Random Number</button>
+        </div>
+        <script>
+            document.getElementById('generate-button').addEventListener('click', function() {
+            var randomNumber = Math.floor(Math.random() * 99) + 1; 
+            document.getElementById('number-display').textContent = randomNumber;
+             });
+
+        </script>
+    
+    </body>
+</html>
